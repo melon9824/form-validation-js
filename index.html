@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this project has created for learning purpose">
+    <title>form-validation-js - agilePoint.</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b766a53cfd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <!-- nav -->
+        <nav class="nav flex">
+            <!-- logo -->
+            <div class="logo flex">
+                <img src="img/logo-main.png" alt="logo image">
+                <h2>agile<span>Point</span>.</h2>
+            </div>
+
+            <!-- nav button -->
+            <button type="button" class="nav-btn btn">Inspire me</button>
+        </nav>
+        
+        <!-- hero -->
+        <section class="contact">
+            <div class="contact-imgBox flex">
+                <img src="img/send-mail.png" class="contact-img">
+            </div>
+
+            <form action="">
+
+                <div class="box">
+                    <label for="contact-name">Name</label>
+                    <input type="text" name="name" id="contact-name" onkeyup="validateName()">
+
+                    <span id="name-error" class="error"></span>
+                </div>
+
+                <div class="box">
+                    <label for="contact-phone">Phone No</label>
+                    <input type="tel" name="tel" id="contact-phone" onkeyup="validatePhone()">
+
+                    <span id="phone-error" class="error"></span>
+                </div>
+
+                <div class="box">
+                    <label for="contact-email">Email ID</label>
+                    <input type="email" name="email" id="contact-email" onkeyup="validateEmail()">
+
+                    <span id="email-error" class="error"></span>
+                </div>
+    
+                <div class="box">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" onkeyup="validateMessage()"></textarea>
+
+                    <span id="message-error" class="error"></span>
+                </div>
+    
+                <!-- form buttons -->
+                <div class="box">
+                    <button class="btn btn-submit" type="submit" onclick="return validateForm()">Submit</button>
+                    
+                    <span id="submit-error" class="error"></span>
+                </div>
+            </form>
+        </section>
+    </header>
+
+
+    <!-- footer -->
+    <footer>
+       <p>&copy; <a href="#"><b>agile</b>Point.</a>&bullet; July 14, 2023</p>
+       <p><a href="#">Khorshed Alam</a></p>
+    </footer>
+    
+
+
+    <!-- js -->
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 18:18 -->

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Monoton&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, 
+                                #222222b2 0%, 
+                                #6b0505ef -50%, 
+                                #2e2d2dde 45%), 
+                                url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/*=== nav ===*/
+.nav {
+    padding: 0.5rem 6%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+/* logo */
+.logo {
+    justify-content: start;
+    column-gap: 0.25rem;
+}
+
+.logo img {
+    width: 2.5rem;
+}
+
+.logo h2 {
+    color: #37D0EE;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #ffa500;
+    font-weight: 400;
+}
+
+/* button */
+.btn {
+    font-size: 1rem;
+    padding: 0.25rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: 0.25rem solid rgba(148, 145, 145, 0.2);
+    background: linear-gradient(45deg, blue 0%, green 100%);
+    transition: background 0.4s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, green 0%, blue 100%);
+}
+
+
+
+/*=== hero ===*/
+.contact{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem 1rem 2.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c1c1c10e;
+    background-image: linear-gradient(#3a36369c, #1f1111b7), url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 0.5rem;
+    border: 1px solid #555;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, 
+                rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .contact-imgBox {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: #4948487c;
+    justify-content: center;
+    position: absolute;
+    top: -1.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, .2) 0px 19px 38px, 
+                rgba(0, 0, 0, .3) 0px 15px 12px;
+  }
+
+  .contact-img {
+    width: 2.65rem;
+  }
+
+  .box{
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  label{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #37D0EE;
+    letter-spacing: 2px;
+    font-family: 'Loved by the King', cursive;
+    transition: 0.4s linear;
+  }
+  
+  input, 
+  textarea{
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.25rem;
+    background: transparent;
+    border-bottom: 0.1rem solid #f68b003d;
+    transition: 0.4s linear;
+    caret-color: #ff0;
+  }
+
+  textarea {
+    resize: none;
+  }
+  
+  .error {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #ff0000;
+    position: absolute;
+    right: 12px;
+    bottom: 4px;
+    
+  }
+
+  .box span i {
+    color: seagreen;
+    font-size: 1.25rem;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+
+  input:focus,
+  textarea:focus{
+    background: #f68b003f;
+  }
+
+  input:focus {
+    padding: 0.5rem;
+  }
+
+  textarea:focus {
+    padding: 1rem;
+  }
+  
+  .btn-submit{
+    color: #fff;
+  }
+
+
+
+
+
+/* footer */
+footer {
+    padding: .5rem 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 50%);
+}
+
+footer p {
+    padding: 0.1rem;
+    font-size: 0.75rem;
+    color: #f8f4f4;
+}
+
+footer p a {
+    color: #8fb1f3;
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+    transition: all 0.4s;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+
+/* responsive design */
+@media screen and (max-width: 576px) {
+    .container {
+        background-size: cover;
+    }
+
+    .nav {
+        padding: 0.5rem 3%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 0.25rem;
+    }
+    
+    .logo img {
+        width: 1.75rem;
+    }
+    
+    .logo h2 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.25rem 1.25rem;
+    }
+
+    .contact {
+      padding: 3rem 1rem 1rem 1rem;
+    }
+
+    .contact h2 {
+        font-size: 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.5rem;
+    }
+}
